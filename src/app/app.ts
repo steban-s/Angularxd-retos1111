@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Navbar } from './components/navbar/navbar';
-import { Dosxd } from './components/dosxd/dosxd';
-import { Tresxd } from './components/tresxd/tresxd';
-import { Kuatroxd } from './components/kuatroxd/kuatroxd';
-import { Sinkopeso } from './components/sinkopeso/sinkopeso';
+import { Navbar } from './components/ejer_1_calculadora/navbar';
+import { Dosxd } from './components/ejer_2_catalogo/dosxd';
+import { Tresxd } from './components/ejer_3_estudiantes/tresxd';
+import { Kuatroxd } from './components/ejer_4_semaforo/kuatroxd';
+import { Sinkopeso } from './components/ejer_5_control_inventario/sinkopeso';
 @Component({
   selector: 'app-root',
   imports: [FormsModule, Navbar, Dosxd, Tresxd, Kuatroxd, Sinkopeso],

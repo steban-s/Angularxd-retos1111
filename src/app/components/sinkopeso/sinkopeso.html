@@ -1,0 +1,25 @@
+<p>sinkopeso works!</p>
+<h2>Reto 5: Control de inventario</h2>
+
+<input [(ngModel)]="nombreProducto" placeholder="Nombre del producto" type="text">
+<input [(ngModel)]="cantidadProducto" placeholder="Cantidad" type="number">
+<input [(ngModel)]="precioProducto" placeholder="Precio" type="number">
+<button (click)="agregar()">Agregar</button>
+
+<p>{{ mensaje }}</p>
+
+<h3>Lista:</h3>
+@for (producto of inventario; track $index) {
+  <div class="producto">
+    <p><strong>{{ producto.nombre }}</strong></p>
+    <p>Cantidad: {{ producto.cantidad }} x ${{ producto.precio }}</p>
+    <p><strong>Total: ${{ producto.cantidad * producto.precio }}</strong></p>
+    <button (click)="eliminar($index)">Eliminar</button>
+  </div>
+} @empty {
+  <p>Todavía no hay productos en el inventario</p>
+}
+
+@if (inventario.length > 0) {
+  <h3>Valor total del inventario: ${{ totalGeneral() }}</h3>
+}

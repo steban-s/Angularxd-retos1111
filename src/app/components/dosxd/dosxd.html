@@ -1,0 +1,17 @@
+<p>dosxd works!</p>
+
+<h2>Reto 2: Catálogo de 5 productos</h2>
+
+@for (producto of productos; track producto.nombre) {
+  <div class="producto">
+    <p><strong>{{ producto.nombre }}</strong></p>
+    <p>Categoría: {{ producto.categoria }}</p>
+    <p>Precio: ${{ producto.precio }}</p>
+
+    @if (producto.precio > 100000) {
+      <p class="costoso">Producto costoso</p>
+    }
+  </div>
+} @empty {
+  <p>No hay productos</p>
+}

@@ -1,0 +1,15 @@
+<p>kuatroxd works!</p>
+<h2>Reto 4: Semáforo interactivo</h2>
+
+<button (click)="cambiarColor('red')">Rojo</button>
+<button (click)="cambiarColor('yellow')">Amarillo</button>
+<button (click)="cambiarColor('green')">Verde</button>
+
+<div class="circulo" [style.backgroundColor]="colorSemaforo"></div>
+
+@switch (colorSemaforo) {
+  @case ('red') { <p>Detenerse</p> }
+  @case ('yellow') { <p>Precaución</p> }
+  @case ('green') { <p>Avanzar</p> }
+  @default { <p>Elige un color</p> }
+}

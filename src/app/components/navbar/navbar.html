@@ -1,0 +1,17 @@
+<p>esta es una calculadora xdxd</p>
+
+<div class="calculadora">
+  <div class="pantalla"></div>
+  <div class="teclas">
+    <input [(ngModel)]="numerouno" type="number">
+    <input [(ngModel)]="numerodos" type="number">
+    <button (click)="sumar()">Sumar</button>
+
+    @if (mensajeError) {
+      <p>{{ mensajeError }}</p>
+    } @else {
+      <p>{{ resultado }}</p>
+    }
+
+  </div>
+</div>

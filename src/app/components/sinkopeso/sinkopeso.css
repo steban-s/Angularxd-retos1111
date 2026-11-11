@@ -1,0 +1,18 @@
+.producto {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+}
+
+button {
+  margin: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+input {
+  display: block;
+  margin: 5px 0;
+  padding: 5px;
+}
